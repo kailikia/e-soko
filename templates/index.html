@@ -20,15 +20,12 @@
            <th>Stock Volume</th>
        </thead>
        <tbody>
-        {% for date,stock in stock_data.items() %}
-           <tr>
-               <td>{{ date }}</td>
-               <td> {{ stock['1. open'] }}</td>
-               <td> {{ stock['2. high'] }}</td>
-                <td> {{ stock['3. low'] }}</td>
-               <td> {{ stock['4. close'] }}</td>
-               <td> {{ stock['5. volume'] }}</td>
-           </tr>
+        {% for st in stock_data %}
+         
+                <tr>
+                    {{ st }}
+                </tr>
+            
         {%endfor %}
        </tbody>
    </table>
